@@ -9,7 +9,7 @@
  */
 async function getMembers() {
     try {
-        const response = await fetch('../asset/data/details.json')
+        const response = await fetch('/asset/data/details.json')
         return response.json();
     } catch (error) {
         console.log(error);
