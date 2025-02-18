@@ -1,0 +1,308 @@
+/* 요소의 너비에 Padding까지 포함하도록 */
+* {
+    box-sizing: border-box;
+}
+/* TODO 배경 색 좀 구린거 같음*/
+body {
+    background-color: #d9d9d9;
+}
+
+#header {
+    /* Text 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.25rem;
+    height: 100px;
+
+    margin-bottom: 20px;
+    /* 배경 이미지 배치용 속성 */
+    overflow: hidden; /* 넘침 제거 */
+    position: relative; /* 위치 기준 점 */
+}
+
+/* 헤더 배경 이미지 */
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* TODO 이미지 더 좋은 거찾으면 변경 */
+    background: url('https://image.edaily.co.kr/images/Photo/files/NP/S/2020/05/PS20050900003.jpg') center/cover no-repeat;
+    filter: blur(2px); /* 블러 처리 */
+    z-index: -1;
+}
+
+/* 헤더 제목 */
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* section */
+#section {
+    display: flex;
+    /* 왼쪽 오른쪽 영역 사이 간격 */
+    gap: 20px;
+    width: 100%;
+
+    padding: 0 10%;
+}
+
+/* 왼쪽 프로필 박스 */
+.profile_box {
+    width: 20%;
+    padding: 12px;
+
+    /* 프로필 박스 내부 내용 쌓기용 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 좁아질 경우 위로 올릴꺼라서 너비는 줄이지 않는다. */
+    min-width: 250px;
+}
+
+/* 프로필 이미지 */
+.profile_image img {
+    width: 200px;
+    height: 200px;
+    /* 이미지 가운데 배치용 */
+    object-fit: cover;
+    /* 우측만 둥글게 만들기 위함 */
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/*  */
+.profile_box .profile_team_name {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E8344E;
+}
+
+/* 조원, 팀장 */
+.profile_role {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* TODO 이름 너무 밑밑해보임 */
+.profile_name {
+    text-align: center;
+}
+
+/* 이미지 갤러리 container */
+.right_box {
+    width: 80%;
+    padding: 20px;
+    /* 이미지 사이즈 넘치지 않도록 */
+    overflow: hidden;
+}
+
+/* 이미지 그리드 row container*/
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    /* 행 간의 간격 */
+    gap: 12px;
+}
+
+/* row */
+.image-row {
+    display: flex;
+    /* 한 행에 공간이 부족하면 다음 줄로 이동 */
+    flex-wrap: wrap;
+    /* 이미지 간 간격 */
+    gap: 8px;
+    /* 요소 사이에 균일한 간격 추가 */
+    justify-content: space-between;
+    /* 모든 행의 높이를 균일하게 설정 */
+    align-items: stretch;
+}
+
+/* 이미지 */
+.image-row .image {
+    /* 기본 너비 30% 나머지는 균등하게 분배 */
+    flex: 1 1 30%;
+    /* 고정된 높이 */
+    height: 240px;
+    /* 배경 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* 그림자 */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+    0 6px 20px rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.7);
+    /* 애니메이션 */
+    transition: transform 400ms ease-out;
+}
+
+.image:hover {
+    transform: scale(1.15);
+}
+/* 이미지 약간 불규칙 적으로 가져가도록 설정 */
+.image-01 {
+    background-image: url('https://images.unsplash.com/photo-1618356387617-8d2f8cfbc79c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    flex: 1;
+}
+
+.image-02 {
+    background-image: url('https://images.unsplash.com/photo-1618614293875-cfe98355681d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    flex: 1;
+}
+
+.image-03 {
+    background-image: url('https://images.unsplash.com/photo-1618627575331-b5f0d4cd72ce?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60');
+    flex: 2;
+}
+
+.image-04 {
+    background-image: url('https://images.unsplash.com/photo-1568602048381-2285db7095c6?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+    flex: 1;
+}
+
+.image-05 {
+    background-image: url('https://images.unsplash.com/photo-1580319204908-eff9d6f0bd68?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60');
+    flex: 2;
+}
+
+.image-06 {
+    background-image: url('https://images.unsplash.com/photo-1604927737867-9f413dac3d08?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDYwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    flex: 2;
+}
+
+.image-07 {
+    background-image: url('https://images.unsplash.com/photo-1614191663579-8780442c043b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    flex: 1;
+}
+
+.image-08 {
+    background-image: url('https://images.unsplash.com/photo-1605812466869-dab071e96c35?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExNnw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60');
+    flex: 3;
+}
+
+.image-09 {
+    background-image: url('https://images.unsplash.com/photo-1617292801457-b108c1672a3d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExMnw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    flex: 1;
+}
+
+/* Footer 영역 */
+#footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    width: 80%;
+
+    margin: 20px auto 0 auto;
+}
+
+/* 댓글 작성 폼 스타일 */
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comment-form .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#comment-form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+
+#comment-form input,
+#comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#comment-form input:focus,
+#comment-form textarea:focus {
+    outline: none;
+    border-color: #E8344E;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+#submit-comment {
+    background-color: #E8344E;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; /* 버튼을 우측 정렬 */
+}
+
+/* 댓글 리스트 스타일 */
+.comment-list {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.comment .author {
+    font-weight: bold;
+    font-size: 14px;
+    color: #E8344E;
+    margin-bottom: 5px;
+}
+
+.comment .content {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* 반응형 디자인 */
+/* 화면이 992px 이하일 때 (태블릿 사이즈) */
+@media only screen and (max-width: 992px) {
+    #section {
+        /* 세로 배치 */
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profile_box {
+        width: 100%;
+        /* 세로 배치 될 경우 최소 너비 제거 */
+        min-width: auto;
+        align-items: center;
+    }
+
+    .profile_image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .right_box {
+        width: 100%;
+    }
+
+}
