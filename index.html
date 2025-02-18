@@ -1,21 +1,37 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>20조 어떡하조 - 팀원 소개 페이지</title>
+  <!doctype html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>20조 어떡하조 - 팀원 소개 페이지</title>
 
-  <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+  <div class="header">
+    <h1>어떡하조</h1>
+  </div>
+  <div class="title-div">
+    <p class="title-1">첫주차라 어색해서 어떡하조</p>
+    <p class="title-1-desc">정말 어떡하조<br/>두줄 어떡하조</p>
+  </div>
+  <div class="btn-container">
+    <button class="member-fold-btn" id="member-fold-btn">> 팀원</button>
+  </div>
+  <div class="member-section" id="member-section"></div>
 
-<h1>첫 만남은 너무 어려워~</h1>
+  <div class="btn-container">
+    <button class="comment-fold-btn" id="comment-fold-btn">> 최근 댓글</button>
+  </div>
+  <div class="new-comments">
+    <div class="comment-list" id="comment-list">
+      <p class="comment">가나다</p>
+      <p class="comment">가나다</p>
+    </div>
+  </div>
+  <script type="module" src="./js/index.js"></script>
 
-<a href="./guestbook.html">방명록 페이지</a>
-
-<script src="./js/index.js"></script>
-
-</body>
-</html>
+  </body>
+  </html>

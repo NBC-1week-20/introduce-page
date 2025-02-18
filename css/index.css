@@ -1,5 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@100..900&display=swap');
+
 body {
-    background-color: #000;
+    background-color: #D9D9D9;
     color: #fff;
+    font-family: "Noto Sans KR", serif;
+    margin:0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image:url('https://cdn.pixabay.com/photo/2023/01/30/07/24/losangeles-7754986_1280.jpg');
+    height: 100px;
+    width: 100%;
+    font-family: "Do Hyeon", serif;
+}
+
+.header>h1 {
+    margin: 0;
+    font-size: 60px; 
+}
+
+.title-div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight:bold;
+    color:rgb(51, 51, 51);
+    gap: 5px;
+}
+
+.title-1{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color:#E8344E;
+}
+
+.title-1-desc{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.member-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+
+.member-card {
+    position: relative;
+    display:flex;
+    height: 350px;
+    max-width: 700px;
+    width: 80%;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 3px #E8344E;
+}
+
+.member-wrap {
+    display:flex;
+    background-color: white;
+    max-width: 670px;
+    height: 320px;
+    margin: 15px 0 10px 15px;
+    flex-direction: row;
+}
+
+.member-left{
+    display:flex;
+    border-radius: 8px;
+    background-color: white;
+    width: 250px;
+    height: 320px;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+}
+
+.member-right{
+    color:black;
+    max-width: 400px;
+    margin: 10px 30px 30px 30px;
+}
+
+.card-name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+
+.card-pic {
+    margin:none;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    overflow:hidden;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;    
+}
+
+.detail-btn{
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    background-color: white;
+    font-weight: bold;
+    border: solid 1px rgb(207, 207, 207);
+    margin-left: 35px;
+    transition: background-color 0.3s; 
+    
+}
+
+.detail-btn:hover{
+    background-color: rgb(237, 237, 237);
+}
+
+.member-desc{
+    color:rgb(60, 60, 60);
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+.btn-container {
+    display: flex;
+    background-color: transparent;
+    max-width:700px;
+    width: 80%;
+    margin: 10px auto 10px auto;
+}
+
+.member-fold-btn{
+    font-size: 30px;
+    font-family: "Do Hyeon", serif;
+    color: #E8344E;
+    background-color: transparent;
+    border: none;
+}
+
+.member-fold-btn:hover{
+    color:rgb(77, 77, 77);
+    font-weight:bold;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.new-comments {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    color: black;
+    height: 230px;
+    max-width: 700px;
+    width: 80%; 
+    margin: 0px auto 80px auto;
+    background-color: transparent;
+    color:rgb(60, 60, 60);
+    border-radius: 8px;
+}
+
+.comment-fold-btn {
+    font-size: 30px;
+    font-family: "Do Hyeon", serif;
+    color: #E8344E;
+    background-color: transparent;
+    border: none;
+}
+
+.comment-fold-btn:hover{
+    color:rgb(77, 77, 77);
+    font-weight:bold;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.comment-list {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding-top: 10px;
+    border-radius: 8px;
+}
+
+.comment {
+    margin: 10px 40px 2px 40px;
 }
 
