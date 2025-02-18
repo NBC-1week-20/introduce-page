@@ -19,14 +19,20 @@
   },
   {
     "id": 2,
-    "name": "윤경모",
+    "name": "윤경모모",
     "teamName": "어떡하조",
     "role": "팀원",
     "profileImageUrl": "url",
     "images": [
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL"
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL"
     ]
   },
   {
@@ -36,9 +42,15 @@
     "role": "팀원",
     "profileImageUrl": "url",
     "images": [
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL"
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL"
     ]
   },
   {
@@ -48,9 +60,15 @@
     "role": "팀원",
     "profileImageUrl": "url",
     "images": [
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL"
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL"
     ]
   }
 ]
