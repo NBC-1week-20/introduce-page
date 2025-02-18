@@ -58,8 +58,8 @@ body {
 .member-card {
     position: relative;
     display:flex;
-    height: 350px;
-    max-width: 700px;
+    height: 360px;
+    max-width: 800px;
     width: 80%;
     margin-bottom: 30px;
     background-color: white;
@@ -69,9 +69,9 @@ body {
 .member-wrap {
     display:flex;
     background-color: white;
-    max-width: 670px;
+    max-width: 770px;
     height: 320px;
-    margin: 15px 0 10px 15px;
+    margin: 20px 0 10px 20px;
     flex-direction: row;
 }
 
@@ -82,29 +82,28 @@ body {
     width: 250px;
     height: 320px;
     flex-direction: column;
-    align-items: right;
     justify-content: center;
 }
 
 .member-right{
     color:black;
     max-width: 400px;
-    margin: 10px 30px 30px 30px;
+    margin: 15px 30px 30px 60px;
 }
 
 .card-name{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 70px;
-    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 7px;
+    margin-left: 65px;
+    font-size: 24px;
     font-weight: bold;
     color: rgb(34, 34, 34);
 }
 
 .card-pic {
     margin:none;
-    height: 350px;
-    width: 250px;
+    height: 340px;
+    width: 245px;
     object-fit: cover;
     overflow:hidden;
     border-bottom-right-radius: 50%;
@@ -130,20 +129,20 @@ body {
 
 .member-desc{
     color:rgb(60, 60, 60);
-    font-size: 16px;
+    font-size: 18px;
     white-space: pre-wrap;
 }
 
 .btn-container {
     display: flex;
     background-color: transparent;
-    max-width:700px;
+    max-width:800px;
     width: 80%;
     margin: 10px auto 10px auto;
 }
 
 .member-fold-btn{
-    font-size: 30px;
+    font-size: 32px;
     font-family: "Do Hyeon", serif;
     color: #E8344E;
     background-color: transparent;
@@ -162,7 +161,7 @@ body {
     align-items: center;
     color: black;
     height: 230px;
-    max-width: 700px;
+    max-width: 800px;
     width: 80%; 
     margin: 0px auto 80px auto;
     background-color: transparent;
@@ -171,7 +170,7 @@ body {
 }
 
 .comment-fold-btn {
-    font-size: 30px;
+    font-size: 32px;
     font-family: "Do Hyeon", serif;
     color: #E8344E;
     background-color: transparent;
