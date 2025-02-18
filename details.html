@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>20조 어떡하조 - 방명록 페이지</title>
+
+  <!-- Reset CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="css/details.css">
+
+</head>
+<body>
+
+<div id="root">
+
+  <!-- Header -->
+  <header id="header">
+    <a class="title" href="./index.html">어떡 하조</a>
+  </header>
+
+  <!-- section -->
+  <section id="section">
+    <aside class="profile_box">
+
+        <div class="profile_image">
+          <img src="./asset/images/kjm_profile_image.jpeg" alt="프로필 이미지"/>
+        </div>
+
+        <div class="profile_team_name">
+          어떡 하조
+        </div>
+
+        <div class="profile_role">조원</div>
+
+        <div class="profile_name">김정민</div>
+
+
+    </aside>
+    <main class="right_box">
+
+      <div class="image-grid">
+
+        <div class="image-row">
+          <div class="image image-01"></div>
+          <div class="image image-02"></div>
+          <div class="image image-03"></div>
+        </div>
+
+        <div class="image-row">
+          <div class="image image-04"></div>
+          <div class="image image-05"></div>
+        </div>
+
+        <div class="image-row">
+          <div class="image image-06"></div>
+          <div class="image image-07"></div>
+          <div class="image image-08"></div>
+          <div class="image image-09"></div>
+        </div>
+
+      </div>
+
+    </main>
+  </section>
+  <footer id="footer">
+
+    <form id="comment-form">
+      <!-- 작성자 이름 입력 -->
+      <div class="form-field">
+        <label for="author-name">작성자</label>
+        <input
+            type="text"
+            id="author-name"
+            name="author"
+            placeholder="작성자를 입력하세요"
+            required
+        />
+      </div>
+
+      <!-- 댓글 내용 입력 -->
+      <div class="form-field">
+        <label for="comment-content">내용</label>
+        <textarea
+            id="comment-content"
+            name="content"
+            placeholder="댓글을 입력하세요"
+            rows="3"
+            required
+        ></textarea>
+      </div>
+
+      <!-- 제출 버튼 -->
+      <button type="submit" id="submit-comment">댓글 작성</button>
+    </form>
+
+
+    <ul class="comment-list">
+      <li class="comment">
+        <div class="author">작성자</div>
+        <div class="content">내용</div>
+      </li>
+    </ul>
+
+  </footer>
+</div>
+
+
+<script src="js/detail.js"></script>
+
+</body>
+</html>
+
