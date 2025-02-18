@@ -10,7 +10,7 @@ function memberCard(member) {
           src="${member.image}"
           alt="Profile picture"/>
         <p class="card-name">${member.name}</p>
-        <a href="/details?id=${member.id}">
+        <a href="./details.html?id=${member.id}">
           <button class="detail-btn">자세히 보기</button>
         </a>
       </div>
