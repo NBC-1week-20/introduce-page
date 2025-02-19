@@ -40,11 +40,11 @@ function toggleMember() {
   const memberBtn = document.getElementById("member-fold-btn");
   if (memberArea.style.display === "none") {
     memberArea.style.display = "flex";
-    memberBtn.style.color = "#E8344E";
+    memberBtn.classList.add("active-btn");
     moveToComment.style.display = "block"
   } else {
     memberArea.style.display = "none";
-    memberBtn.style.color = "rgb(77, 77, 77)";
+    memberBtn.classList.remove("active-btn");
     moveToComment.style.display = "none"
 
   }
@@ -58,11 +58,11 @@ function toggleComment() {
 
     if (commentArea.style.display === "none") {
         commentArea.style.display = "flex";
-        commentBtn.style.color = "#E8344E";
-    } else {
+        commentBtn.classList.add("active-btn");
+      } else {
         commentArea.style.display = "none";
-        commentBtn.style.color = "rgb(77, 77, 77)";
-    }
+        commentBtn.classList.remove("active-btn");
+      }
   }
   
 
