@@ -14,14 +14,4 @@ jobs:
         uses: actions/checkout@v3  # 현재 저장소의 코드를 가져옴
 
       - name: "config.yaml 파일 생성"  
-        run: |
-          echo "apiKey: '${{ secrets.apiKey }}'" > config.yaml
-          echo "authDomain: '${{ secrets.authDomain }}'" >> config.yaml
-          echo "projectId: '${{ secrets.projectId }}'" >> config.yaml
-          echo "storageBucket: '${{ secrets.storageBucket }}'" >> config.yaml
-          echo "messagingSenderId: '${{ secrets.messagingSenderId }}'" >> config.yaml
-          echo "appId: '${{ secrets.appId }}'" >> config.yaml
-          echo "measurementId: '${{ secrets.measurementId }}'" >> config.yaml
-
-      - name: "config.yaml 확인"  
-        run: cat config.yaml  # 파일 내용을 출력하여 확인
+        run: echo "${{ secrets.CONFIG_JSON }}" > config.json
