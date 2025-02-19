@@ -1,3 +1,62 @@
+// Firebase SDK 라이브러리 가져오기
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+async function ykm() {
+
+    const response = await fetch('../introduce-page/config.json')
+    const firebaseConfig = await response.json();
+    // const firebaseConfig = response.json();
+    // Firebase 인스턴스 초기화
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Firebase에 데이터 저장
+    $("#postingbtn").click(async function () {
+
+        let author = $('#author-name').val();
+
+        let content = $('#comment-content').val();
+
+        let doc = {
+            'author_name': author,
+            'content': content
+        }
+
+        await addDoc(collection(db, "details"), doc);
+
+        window.location.reload();
+
+    })
+
+    // Firebase에서 데이터 불러오기
+    let docs = await getDocs(collection(db, "details"));
+
+    // 새로운 댓글 목록 생성
+    let temp_html = '';
+
+    docs.forEach((doc) => {
+        let row = doc.data();
+        let author_data = row['author_name'];
+        let content_data = row['content'];
+
+        temp_html += `
+        <li class="comment">
+          <div class="author">${author_data}</div>
+          <div class="content">${content_data}</div>
+        </li>
+    `;
+
+    });
+
+    // 기존 ul태그 내부 내용 갱신
+    $('.comment-list').html(temp_html);
+    
+
+}
+
 /**
  * 파일에서 회원 데이터 불러오기
  * member: {
@@ -74,3 +133,4 @@ async function loadMemberAndInsertHtml() {
 }
 
 loadMemberAndInsertHtml()
+ykm()
