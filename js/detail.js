@@ -4,61 +4,58 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase
 import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
+async function ykm() {
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBtVPaMcwLkX8OC8fVfAjpZDxfacykBREU",
-    authDomain: "sparta-e02dc.firebaseapp.com",
-    projectId: "sparta-e02dc",
-    storageBucket: "sparta-e02dc.firebasestorage.app",
-    messagingSenderId: "1000457952288",
-    appId: "1:1000457952288:web:472fe9e7f48a94cea37045",
-    measurementId: "G-H41TVN2QFP"
-};
+    const response = await fetch('../introduce-page/config.json')
+    const firebaseConfig = await response.json();
+    // const firebaseConfig = response.json();
+    // Firebase 인스턴스 초기화
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
 
-// Firebase 인스턴스 초기화
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+    // Firebase에 데이터 저장
+    $("#postingbtn").click(async function () {
 
-// Firebase에 데이터 저장
-$("#postingbtn").click(async function () {
+        let author = $('#author-name').val();
 
-    let author = $('#author-name').val();
+        let content = $('#comment-content').val();
 
-    let content = $('#comment-content').val();
+        let doc = {
+            'author_name': author,
+            'content': content
+        }
 
-    let doc = {
-        'author_name': author,
-        'content': content
-    }
+        await addDoc(collection(db, "details"), doc);
 
-    await addDoc(collection(db, "details"), doc);
-    window.location.reload(); 
+        window.location.reload();
 
-})
+    })
 
-// Firebase에서 데이터 불러오기
-let docs = await getDocs(collection(db, "details"));
-docs.forEach((doc) => {
-    let row = doc.data();
-    let author_data = row['author_name'];
-    let content_data = row['content'];
+    // Firebase에서 데이터 불러오기
+    let docs = await getDocs(collection(db, "details"));
 
-    let temp_html = `
-    <ul class="comment-list">
+    // 새로운 댓글 목록 생성
+    let temp_html = '';
+
+    docs.forEach((doc) => {
+        let row = doc.data();
+        let author_data = row['author_name'];
+        let content_data = row['content'];
+
+        temp_html += `
         <li class="comment">
           <div class="author">${author_data}</div>
           <div class="content">${content_data}</div>
         </li>
-    </ul>
     `;
 
-    $('.comment-list').before(temp_html); // 기존 .comment-list의 바깥쪽 앞에 추가
+    });
+
+    // 기존 ul태그 내부 내용 갱신
+    $('.comment-list').html(temp_html);
     
 
-});
-
-
-
+}
 
 /**
  * 파일에서 회원 데이터 불러오기
@@ -136,4 +133,4 @@ async function loadMemberAndInsertHtml() {
 }
 
 loadMemberAndInsertHtml()
-
+ykm()

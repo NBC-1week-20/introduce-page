@@ -4,7 +4,7 @@
     "name": "김정민 입니다람쥐",
     "teamName": "어떡하조",
     "role": "팀원",
-    "profileImageUrl": "/asset/images/kjm_profile_image.jpeg",
+    "profileImageUrl": "/introduce-page/asset/images/kjm_profile_image.jpeg",
     "images": [
       "https://images.unsplash.com/photo-1618356387617-8d2f8cfbc79c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "https://images.unsplash.com/photo-1618356387617-8d2f8cfbc79c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -22,17 +22,17 @@
     "name": "윤경모",
     "teamName": "어떡하조",
     "role": "팀원",
-    "profileImageUrl": "url",
+    "profileImageUrl": "/introduce-page/asset/images/ykm_profile_image.jpg",
     "images": [
-      "http://URL",
-      "http://URL",
-      "http://URL",
-      "http://URL",
-      "http://URL",
-      "http://URL",
-      "http://URL",
-      "http://URL",
-      "http://URL"
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F990822335A03045709",
+      "https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1688074000561-f6650e1055a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fCVFRCU5MiU4RCVFQSVCMiVCRCUyMCVFQyU4MiVBQyVFQyVBNyU4NHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1605025169915-987049301f31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fCVFRCU5MiU4RCVFQSVCMiVCRCUyMCVFQyU4MiVBQyVFQyVBNyU4NHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1600672196900-c98c011a0977?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFRCU5MiU4RCVFQSVCMiVCRCUyMCVFQyU4MiVBQyVFQyVBNyU4NHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1506282253012-317dd5a8265a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fCVFRCU5MiU4RCVFQSVCMiVCRCUyMCVFQyU4MiVBQyVFQyVBNyU4NHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1668090758448-45e8ecbe1a8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fCVFRCU5MiU4RCVFQSVCMiVCRCUyMCVFQyU4MiVBQyVFQyVBNyU4NHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1625570967928-a7d28f1eb3f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fCVFRCU5MiU4RCVFQSVCMiVCRCUyMCVFQyU4MiVBQyVFQyVBNyU4NHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1610302521145-3376354f1735?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fCVFRCU5MiU4RCVFQSVCMiVCRCUyMCVFQyU4MiVBQyVFQyVBNyU4NHxlbnwwfHwwfHx8MA%3D%3D"
     ]
   },
   {
