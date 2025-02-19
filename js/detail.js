@@ -1,3 +1,65 @@
+// Firebase SDK 라이브러리 가져오기
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBtVPaMcwLkX8OC8fVfAjpZDxfacykBREU",
+    authDomain: "sparta-e02dc.firebaseapp.com",
+    projectId: "sparta-e02dc",
+    storageBucket: "sparta-e02dc.firebasestorage.app",
+    messagingSenderId: "1000457952288",
+    appId: "1:1000457952288:web:472fe9e7f48a94cea37045",
+    measurementId: "G-H41TVN2QFP"
+};
+
+// Firebase 인스턴스 초기화
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// Firebase에 데이터 저장
+$("#postingbtn").click(async function () {
+
+    let author = $('#author-name').val();
+
+    let content = $('#comment-content').val();
+
+    let doc = {
+        'author_name': author,
+        'content': content
+    }
+
+    await addDoc(collection(db, "details"), doc);
+    window.location.reload(); 
+
+})
+
+// Firebase에서 데이터 불러오기
+let docs = await getDocs(collection(db, "details"));
+docs.forEach((doc) => {
+    let row = doc.data();
+    let author_data = row['author_name'];
+    let content_data = row['content'];
+
+    let temp_html = `
+    <ul class="comment-list">
+        <li class="comment">
+          <div class="author">${author_data}</div>
+          <div class="content">${content_data}</div>
+        </li>
+    </ul>
+    `;
+
+    $('.comment-list').before(temp_html); // 기존 .comment-list의 바깥쪽 앞에 추가
+    
+
+});
+
+
+
+
 /**
  * 파일에서 회원 데이터 불러오기
  * member: {
@@ -74,3 +136,4 @@ async function loadMemberAndInsertHtml() {
 }
 
 loadMemberAndInsertHtml()
+

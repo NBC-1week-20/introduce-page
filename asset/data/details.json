@@ -24,9 +24,15 @@
     "role": "팀원",
     "profileImageUrl": "url",
     "images": [
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL"
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL"
     ]
   },
   {
@@ -36,9 +42,15 @@
     "role": "팀원",
     "profileImageUrl": "url",
     "images": [
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL"
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL"
     ]
   },
   {
@@ -48,9 +60,15 @@
     "role": "팀원",
     "profileImageUrl": "url",
     "images": [
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL"
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL",
+      "http://URL"
     ]
   }
 ]
