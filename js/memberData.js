@@ -2,7 +2,7 @@ const members = [
     {
         name: "김정민",
         id: "1",
-        image: "https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg",
+        image: "../asset/images/kjm_profile_image.jpeg",
         description: "1234sdkfjheiwufh\noiefjwoeifjowiejfoijowiejf"
     },
     {
@@ -20,7 +20,7 @@ const members = [
     {
         name: "장희수",
         id: "4",
-        image: "https://cdn.pixabay.com/photo/2015/01/27/09/58/man-613601_1280.jpg",
+        image: "../asset/images/jhs_profile_image.jpeg",
         description: "899"
     }
 ]
