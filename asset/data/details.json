@@ -45,12 +45,18 @@
     "id": 4,
     "name": "장희수",
     "teamName": "어떡하조",
-    "role": "팀원",
-    "profileImageUrl": "url",
+    "role": "조장",
+    "profileImageUrl": "/introduce-page/asset/images/jhs_profile_image.jpeg",
     "images": [
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL",
-      "http://URL", "http://URL", "http://URL"
+      "https://cdn.pixabay.com/photo/2022/02/20/21/18/laptop-7025342_1280.jpg",
+      "https://images.unsplash.com/photo-1635514569146-9a9607ecf303?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+      "https://images.unsplash.com/photo-1631878384509-18841144d531?q=80&w=2988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1538960792157-b2e2b62d1f3c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+      "https://images.unsplash.com/photo-1598871956091-1b9681ae2bf0?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1564019472231-4586c552dc27?q=80&w=3033&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+      "https://images.unsplash.com/photo-1624116518496-993146f67f4a?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+      "https://images.unsplash.com/photo-1532629804872-98086b058cae?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+      "https://images.unsplash.com/photo-1549007953-2f2dc0b24019?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   }
 ]
