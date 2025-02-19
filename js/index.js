@@ -50,10 +50,12 @@ function toggleMember() {
   }
 }
 
-const commentArea = document.getElementById("comment-list");
+const commentTitle = document.getElementById("newcomments");
 
 function toggleComment() {
     const commentBtn = document.getElementById("comment-fold-btn");
+    const commentArea = document.getElementById("comment-list");
+
     if (commentArea.style.display === "none") {
         commentArea.style.display = "flex";
         commentBtn.style.color = "#E8344E";
@@ -65,6 +67,6 @@ function toggleComment() {
   
 
   moveToComment.addEventListener("click", () => {
-    commentArea.scrollIntoView({ behavior: "smooth", block: "start" });
+    commentTitle.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
