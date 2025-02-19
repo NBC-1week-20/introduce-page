@@ -1,0 +1,17 @@
+name: Firebase Configuration
+
+on: 
+  push:  # 이 브랜치에 푸시할 때마다 실행됨
+    branches:
+      - main  # main 브랜치에 푸시할 때
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Ubuntu 최신 버전에서 실행
+
+    steps:
+      - name: 체크아웃 (코드 가져오기)
+        uses: actions/checkout@v3  # 현재 저장소의 코드를 가져옴
+
+      - name: "config.yaml 파일 생성"  
+        run: echo "${{ secrets.CONFIG_JSON }}" > config.json

@@ -33,22 +33,29 @@ foldMember.addEventListener("click", toggleMember);
 const foldComments = document.getElementById("comment-fold-btn");
 foldComments.addEventListener("click", toggleComment);
 
+const moveToComment = document.getElementById("moveToComments");
+
 function toggleMember() {
   const memberArea = document.getElementById("member-section");
   const memberBtn = document.getElementById("member-fold-btn");
   if (memberArea.style.display === "none") {
     memberArea.style.display = "flex";
     memberBtn.style.color = "#E8344E";
-
+    moveToComment.style.display = "block"
   } else {
     memberArea.style.display = "none";
     memberBtn.style.color = "rgb(77, 77, 77)";
+    moveToComment.style.display = "none"
+
   }
 }
 
+const commentTitle = document.getElementById("newcomments");
+
 function toggleComment() {
-    const commentArea = document.getElementById("comment-list");
     const commentBtn = document.getElementById("comment-fold-btn");
+    const commentArea = document.getElementById("comment-list");
+
     if (commentArea.style.display === "none") {
         commentArea.style.display = "flex";
         commentBtn.style.color = "#E8344E";
@@ -58,3 +65,8 @@ function toggleComment() {
     }
   }
   
+
+  moveToComment.addEventListener("click", () => {
+    commentTitle.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
